@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store Application </title>
+</head>
+<body>
+    <h1>Welcome to the Book Store Management System</h1>
+    <form action="registerBook" method="post">
+        <h3>Register a New Task</h3>
+        <label>Title:</label>
+        <input type="text" name="title" required><br>
+        <label>Author:</label>
+        <input type="text" name="author" required><br>
+        <label> price:</label>
+        <input type="number" name="price" required><br>
+        <button type="submit">Add Task</button>
+    </form>
+    
+    <h3>Delete a Task</h3>
+    <form action="deleteBook" method="post">
+        <label>Task ID:</label>
+        <input type="number" name="bookId" required><br>
+        <button type="submit">Delete Task</button>
+    </form>
+
+    <h3>Search Tasks</h3>
+    <form action="searchBook" method="get">
+        <label>Keyword:</label>
+        <input type="text" name="keyword" required><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <h3>View All Tasks</h3>
+    <form action="displayBooks" method="get">
+        <button type="submit">Display Books</button>
+    </form>
+</body>
+</html>
